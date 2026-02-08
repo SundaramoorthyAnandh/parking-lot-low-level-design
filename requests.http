@@ -1,0 +1,34 @@
+### Entry Request (Car)
+POST http://localhost:3000/api/v1/parking/entry
+Content-Type: application/json
+
+{
+    "licensePlate": "KA-01-AB-1234",
+    "vehicleType": "CAR"
+}
+
+### Entry Request (Motorcycle)
+POST http://localhost:3000/api/v1/parking/entry
+Content-Type: application/json
+
+{
+    "licensePlate": "KA-05-XY-9876",
+    "vehicleType": "MOTORCYCLE"
+}
+
+### Entry Request (Bus)
+POST http://localhost:3000/api/v1/parking/entry
+Content-Type: application/json
+
+{
+    "licensePlate": "KA-50-BM-5555",
+    "vehicleType": "BUS"
+}
+
+### Exit Request (Use ticketId from Entry Response)
+POST http://localhost:3000/api/v1/parking/exit
+Content-Type: application/json
+
+{
+    "ticketId": "REPLACE_WITH_TICKET_ID"
+}
